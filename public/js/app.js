@@ -1034,20 +1034,26 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_buefy__ = __webpack_require__(37);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_buefy___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_buefy__);
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-//dont remve it its for pull in the boostrape.js
 __webpack_require__(12);
 
 window.Vue = __webpack_require__(35);
 
-//Vue.component('example', require('./components/Example.vue'));
-
 
 Vue.use(__WEBPACK_IMPORTED_MODULE_0_buefy___default.a);
+
+// Vue.component('example', require('./components/Example.vue'));
+
+var app = new Vue({
+  el: '#app',
+  data: {}
+});
+
+$(document).ready(function () {
+  //  Dropdowns
+  $('.dropdown').hover(function (e) {
+    $(this).toggleClass('is-open');
+  });
+});
 
 /***/ }),
 /* 12 */
